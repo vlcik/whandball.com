@@ -1,0 +1,156 @@
+
+		#nav
+		{
+			width: 98%;
+			font-family: 'Ubuntu';
+			text-shadow: #000000 1px 1px 1px;
+			margin-top: -13px;
+		}
+
+			#nav > a
+			{
+				display: none;
+				text-decoration: none;
+			}
+
+
+
+
+			#nav li
+			{
+				position: relative;
+				outline: 0;
+				padding: 0;
+				margin: 0;
+			}
+
+			#nav ul
+			{
+				list-style: none;
+				outline: 0;
+				padding: 0;
+				margin: 0;
+			}
+
+				#nav li a
+				{
+					color: #fff;
+					display: block;
+					text-decoration: none;
+				}
+				#nav li a:active
+				{
+					background-color: #c00 ;
+					text-decoration: none;
+				}
+
+			#nav span:after
+			{
+				border-left:0.313em solid transparent; border-right:0.313em solid transparent; border-top:0.313em solid #BDDDF0; opacity: 0.5; width: 10;
+				height: 10;
+				border-bottom: medium none;
+				content: '';
+				display: inline-block;
+				position: relative;
+				right: -0.313em;
+				margin-bottom:10px;
+			}
+
+			/* first level */
+
+			#nav > ul
+			{
+				height: 40px;
+				background: rgba(34, 85, 136, .97);
+				text-align: center;
+				font-family: 'Ubuntu', 'Oswald', sans-serif;
+
+			}
+				#nav > ul > li
+				{
+					width: auto;
+					height: 100%;
+					float: left;
+					text-align: center;
+					margin-top: 0px;
+				}
+
+				#nav > ul > li.first
+				{
+					background-color: white;
+					margin-top: 0px;
+				}
+
+				#nav > ul > li.last
+				{
+					background-color: white;
+					float: right;
+					margin-top: 0px;
+				}
+
+					#nav > ul > li > a
+					{
+						height: 100%;
+						text-align: center;
+						letter-spacing: 2px;
+						color: white;
+						margin-top:0px;
+						padding-top:2px;
+					}
+						#nav > ul > li:not( :last-child ) > a
+						{
+							border-right: 0px solid #225588;
+						}
+						#nav > ul > li:hover > a,
+						#nav > ul:not( :hover ) > li.active > a
+						{
+							background-color: #001437;
+							padding:0;
+							margin-top:3px;
+							line-height:1;
+							height: 95%;
+						}
+
+
+				/* second level */
+
+				#nav li ul
+				{
+					background-color: #001437;
+					background: rgba(0, 20, 55, .95);
+					display: none;
+					position: absolute;
+					top: 100%;
+					font-family: 'Ubuntu';
+					font-weight: bold;
+					z-index: 999999;
+				}
+					#nav li:hover ul
+					{
+						display: block;
+						left: 0;
+						right: 0;
+
+					}
+						#nav li:not( :first-child ):hover ul
+						{
+							left: 0px;
+							right:0px;
+						}
+						#nav li ul a
+						{
+							font-size: 17px;
+							border-bottom: 1px dotted #225588;
+							padding: 5px; 
+							color: white;
+
+						}
+							#nav li ul li a:hover,
+							#nav li ul:not( :hover ) li.active a
+							{
+								background-color: #225588;
+								background: rgba(34, 85, 136, .7);
+								color: white;
+							}
+
+
